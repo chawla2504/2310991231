@@ -77,3 +77,13 @@ ORDER BY timestamp DESC;
 SELECT * FROM notifications
 ORDER BY timestamp DESC
 LIMIT 10 OFFSET 0;
+
+# Stage 4
+
+## Performance Improvements
+
+- Use caching for frequently accessed notifications
+- Limit API response size using pagination
+- Optimize database queries using indexes
+- Use asynchronous processing for heavy operations
+- Reduce response time by minimizing data fields
