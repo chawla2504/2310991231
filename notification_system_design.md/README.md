@@ -53,6 +53,20 @@ VALUES ('uuid', 'Result', 'Result declared', NOW());
 -- Get all notifications
 SELECT * FROM notifications
 ORDER BY timestamp DESC;
+# Stage 3
+
+## Indexing
+
+CREATE INDEX idx_type ON notifications(type);
+CREATE INDEX idx_timestamp ON notifications(timestamp);
+
+
+## Optimization Techniques
+
+- Use indexing on frequently queried fields (type, timestamp)
+- Use pagination to limit data load
+- Order results using indexed columns
+- Avoid full table scans
 
 -- Filter by type
 SELECT * FROM notifications
