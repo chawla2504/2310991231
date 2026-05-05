@@ -87,3 +87,22 @@ LIMIT 10 OFFSET 0;
 - Optimize database queries using indexes
 - Use asynchronous processing for heavy operations
 - Reduce response time by minimizing data fields
+
+- # Stage 5
+
+## Scalability
+
+- Design APIs to be stateless
+- Use load balancing for high traffic
+- Scale database horizontally if needed
+- Use message queues for handling large number of notifications
+
+## Security
+
+- Validate API requests
+- Use authentication (Bearer token)
+- Prevent unauthorized access
+
+## Conclusion
+
+The system is designed to be simple, efficient, and scalable, with support for future enhancements.
